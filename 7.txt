@@ -1,0 +1,19 @@
+?{ name}(s{ id<>aid}(?{aid}(b)))
+
+?{ name}(s{ id<>aid}(?{aid}(b))(a))
+
+?{ name}(s{ id<>aid}(?{aid}(b))(a))
+
+
+σ{ }()
+
+Π{ }()
+
+≠
+
+Π{ name}(σ{ id ≠ (Π{aid}(b))}(a))
+
+Π{name}(σ{a.id is null ∨ b.aid is null }((σ{a.id=b.aid}(a ⋈ b))) )
+
+
+σ{a.id is null ∨ b.aid is null}(σ{a.id=b.aid}(a ⋈ b))
