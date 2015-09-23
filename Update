@@ -1,0 +1,51 @@
+Given Relation:
+customer(customer_id(pk), last_name,first_name, birthdate, email)
+
+customer_id = 1
+last_name = 'Roman' 
+first_name = 'Ray'
+birthdate = 27/5/1975 
+email = 'ko@pa.co.uk'
+
+Expected Output (class update)
+	Table Name
+	Primary Key
+	Columns to update
+	Values to update
+	Columns of where condition
+	Values of where condition
+
+
+Input 1: UPDATE customer 
+         SET first_name = 'Smith', birthdate ='23/5/1975, email = 'ikaw@pa.co.uk'
+         WHERE last_name = 'Roman' AND email = 'ko@pa.co.uk';
+
+Output1: 
+        ['customer] <--- Table Name
+        ['1']       <--- Primary Key
+	['first_name', 'birthdate', 'email']  <--- 3 column names to update
+	['Smith',23/5/1975, 'ikaw@pa.co.uk']  <--- 3 values to update
+        ['last_name', email]  <--- column/s of where codition?
+        ['Roman','ko@pa.co.uk'] <--- values of where codition
+         
+
+
+Initial Algorithm
+
+1. Find the table 'table name' if existing? true or false
+2. Find where 'condition' (statemen)
+3. 		condition is true return row including the primary key
+4. execute update with the set values.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
